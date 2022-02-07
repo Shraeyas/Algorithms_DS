@@ -38,7 +38,6 @@ void get_one_off(int n) {
 		int x = num + i * 1000;
 		if(prime[x] && n != x) {
 			adj[n].push_back(x);
-			adj[x].push_back(n);
 		}
 	}
 }
